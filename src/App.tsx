@@ -46,7 +46,7 @@ function App() {
   return (
     <section className={`h-screen flex bg-black justify-between overflow-hidden`}>
       {new Array(sizeValues[0]).fill(0).map((_column, idx) => {
-        return <MatrixColumn key={idx} colCount={sizeValues[1]} />;
+        return <MatrixColumn key={idx} rowCount={sizeValues[1]} />;
       })}
     </section>
   );
