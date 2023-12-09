@@ -18,10 +18,9 @@ function App() {
 
   useEffect(() => {
     const resizeFunction = () => {
-      const colCount = Math.floor(window.innerWidth / 20);
-      const rowCount = Math.floor(window.innerHeight / 20);
+      
 
-      setSizeValues([colCount, rowCount]);
+      setSizeValues(initialCalculation());
     };
 
     window.addEventListener("resize", resizeFunction);
